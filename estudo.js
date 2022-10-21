@@ -37,6 +37,19 @@ function total(){
   let  v = document.getElementById("Valor").value;
   let  j = document.getElementById("Juros").value;
   let  t = document.getElementById("Meses").value; 
+  if(Number(v)){
+   alert("O Valor Deve ser um Numero");
+   document.getElementById("valor").value = "";
+   document.getElementById("valor").focus();
+   return
+  }
+  if(Number(j)){
+    alert("Os Juros devem ser Numericos");
+    document.getElementById("juros").value = "";
+    document.getElementById("juros").focus();
+    return
+   }
+
   let  r = 0;
 for (let i=1; i <= t;i++) {
   r = v * (1+(j/100));
@@ -46,7 +59,7 @@ for (let i=1; i <= t;i++) {
 }
   document.write("Resultado: R$"+ r);
 }
-function media(){
+function Media(){
     let n1 = document.getElementById("n1").value;
     let n2 = document.getElementById("n2").value;
     let n3 = document.getElementById("n3").value;
