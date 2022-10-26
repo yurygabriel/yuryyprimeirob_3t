@@ -53,7 +53,7 @@ function total(){
   let  r = 0;
 for (let i=1; i <= t;i++) {
   r = v * (1+(j/100));
-  document.write("Mês "+ i + "valor: " + r + "<br>");
+  //document.write("Mês "+ i + "valor: " + r + "<br>");
   v = r; 
 
 }
@@ -66,6 +66,8 @@ function Media(){
     let n4 = document.getElementById("n4").value;
 
     let r = (Number(n1)+Number(n2)+Number(n3)+Number(n4))/4;
-    document.getElementById("result").innerHTML = "Media" + r;
+    //document.getElementById("result").innerHTML = "Media" + r;
+    //document.write("resultado: " + moeda(r));
 
 }
+
